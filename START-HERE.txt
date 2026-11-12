@@ -1,0 +1,26 @@
+﻿راننده هوشمند ۲.۰ — راهنمای سریع ویندوز (بارگذاری روی GitHub)
+================================================================
+
+قدم ۱ — مخزن خالی بسازید
+  به https://github.com/new بروید
+  Repository name:  SmartDriverAssistant
+  Public یا Private: هر کدام که می‌خواهید
+  «Add a README file» را تیک نزنید (مخزن باید خالی باشد)
+  دکمهٔ Create repository را بزنید و آدرس سبزرنگ (Code) را کپی کنید.
+
+قدم ۲ — این پوشه را در Command Prompt باز کنید
+  در همین پوشه، در نوار آدرس ویندوز تایپ کنید:  cmd  و Enter بزنید
+
+قدم ۳ — دستور را اجرا کنید (USERNAME را با نام کاربری خودتان عوض کنید)
+  push.bat https://github.com/USERNAME/SmartDriverAssistant.git
+
+  اگر Git نصب نیست، اول از https://git-scm.com/download/win نصب کنید،
+  پنجرهٔ CMD را ببندید و دوباره باز کنید.
+
+قدم ۴ (اختیاری) — پیوست کردن فایل نصب
+  در صفحهٔ مخزن: Releases → Draft a new release → فایل APK را پیوست کنید.
+
+نکته‌ها
+  • اولین push ممکن است پنجرهٔ ورود GitHub را باز کند؛ وارد شوید.
+  • فایل keystore.jks و فایل‌های .env عمداً در این بسته نیستند (راز هستند).
+  • راهنمای کامل: docs/INSTALL-android.md و docs/INSTALL-windows.md

@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# builds
+.next/
+out/
+build/
+dist/
+release/
+*.tsbuildinfo
+
+# android artifacts
+android/build/
+android/out/
+android/app/assets/www/
+*.apk
+*.aab
+*.idsig
+*.jks
+*.keystore
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# python
+__pycache__/
+.venv/

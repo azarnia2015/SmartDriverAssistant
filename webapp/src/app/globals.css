@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./app.css";
+
+/* پایهٔ صفحه — نسخهٔ وب همان ظاهر اپلیکیشن اندروید را دارد */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5efe3;
+  color: #241e16;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}

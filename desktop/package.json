@@ -1,0 +1,47 @@
+{
+  "name": "smart-driver-assistant",
+  "productName": "SmartDriverAssistant",
+  "version": "2.0.0",
+  "description": "دستیار هوشمند رانندگان — گزارش گفت‌وگویی، تحلیل مصرف و خروجی اکسل (آفلاین)",
+  "main": "main.js",
+  "author": "SmartDriver",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "electron": "38.2.2",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "ir.smartdriver.assistant.desktop",
+    "productName": "SmartDriverAssistant",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "app/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "راننده هوشمند",
+      "artifactName": "SmartDriverAssistant-Setup-${version}.exe"
+    }
+  }
+}
